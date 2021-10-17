@@ -8,8 +8,10 @@
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/drawable/shape_button.xml" value="0.2703125" />
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/fragment_order_list.xml" value="0.264" />
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/fragment_products.xml" value="0.4" />
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/fragment_sign_in.xml" value="0.176" />
+        <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/item_order.xml" value="0.536" />
         <entry key="..\:/AndroidProjects/CoffeeShop/app/src/main/res/layout/item_product.xml" value="0.536" />
       </map>
     </option>

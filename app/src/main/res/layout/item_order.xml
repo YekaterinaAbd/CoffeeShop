@@ -2,30 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:background="@drawable/shape_button"
     android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/shape_button"
     android:backgroundTint="#F8F8F8"
-    android:paddingBottom="8dp">
+    android:padding="8dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:cardCornerRadius="14dp"
         app:cardElevation="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/image"
-            android:layout_width="130dp"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
@@ -37,13 +34,15 @@
         android:id="@+id/textTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textPrice"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
         tools:text="Title" />
 
     <TextView
@@ -54,7 +53,7 @@
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/dark_grey"
         android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="@+id/textTitle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textTitle"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
         tools:text="Description" />
@@ -63,23 +62,12 @@
         android:id="@+id/textPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/textDescription"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textTitle"
         tools:text="$10.5" />
-
-    <ImageButton
-        android:id="@+id/buttonAdd"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:background="@drawable/round_button"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_constraintBottom_toBottomOf="@+id/textPrice"
-        app:layout_constraintEnd_toEndOf="@+id/textDescription"
-        app:layout_constraintTop_toTopOf="@+id/textPrice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

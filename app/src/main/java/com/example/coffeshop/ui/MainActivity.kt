@@ -22,9 +22,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             VENDOR,
             CUSTOMER
         }
-    }
 
-    var userType: UserType = UserType.CUSTOMER
+        var userType: UserType = UserType.CUSTOMER
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
