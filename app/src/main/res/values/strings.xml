@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CoffeShop</string>
+    <string name="hey_welcome">Hey! Welcome</string>
+    <string name="description">We deliver on-demand organic coffees directly from your neacrby farms.</string>
+    <string name="customer">Customer</string>
+    <string name="vendor">Vendor</string>
+</resources>
